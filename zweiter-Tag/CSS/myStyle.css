@@ -1,0 +1,72 @@
+
+
+/*
+    Ich bin ein CSS-Kommentar
+*/
+
+/* Selektoren in CSS */
+
+/*
+    Element-Selektor
+    Stylt alle Elemente des entsprechenden Typen
+*/
+p {
+    color:darkblue;
+}
+
+/* Universal Selektor */
+/* Stylt alle Elemente
+   Spezifität: 0, style also nur Elemente, für die das Property noch nicht festgelegt wurde
+*/
+* {
+    color: black;
+}
+
+/*
+    Class-Selector
+    Stylt alle Elemente mit der entsprechenden Klasse
+    Ist der zweitspezifischte Selektor, nach dem ID-Selektor
+*/
+.cool-paragraph {
+    color: slategrey;
+    font-size: 36px;
+}
+
+/*
+    ID-Selektor
+    Stylt jedes Element mit der entsprechenden ID, also im Optimalfall nur ein einziges
+    Ist der spezifischte Selektor
+*/
+#site-top {
+    font-size: 42px;
+    color: aquamarine;
+}
+
+/*
+1. Kopfbereich (Header):
+    - Füge eine Hauptüberschrift (h1) mit deinem Namen ein.
+    - Setze darunter einen Untertitel, z.B. "Web-Entwickler" oder eine kurze Beschreibung.
+    - Der Hintergrund des Kopfbereichs soll eine Farbe deiner Wahl haben.
+
+2. Navigation (Navbar):
+    -Erstelle eine Navigationsleiste mit mindestens drei Links:
+        - Home
+        - Über mich
+        - Kontakt
+    - Gestalte die Links so, dass sie beim Hovern ihre Farbe ändern.
+
+3. Abschnitt "Über mich":
+    - Füge einen Abschnitt mit dem Titel "Über mich" hinzu.
+    - Schreibe ein paar Sätze über dich (oder erfinde etwas), und style den Text ansprechend.
+    - Verwende mindestens zwei verschiedene Schriftgrößen und eine Farbe, die gut zum Hintergrund passt.
+
+4. Bildergalerie (optional):
+    - Füge mindestens zwei Bilder hinzu, die nebeneinander in einem flexiblen Layout angezeigt werden.
+    - Die Bilder sollen leicht abgerundete Ecken haben.
+
+5. Fußbereich (Footer):
+    - Füge im unteren Bereich der Seite einen Footer hinzu mit folgendem Inhalt:
+        - Dein Name (z.B. "Designed by [Name]")
+        - Ein Link zu deiner E-Mail-Adresse
+
+*/
