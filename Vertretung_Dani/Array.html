@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <script>
+
+        // Array erzeugen (1)
+        var bundesliga = new Array(); // leeres Array
+
+        // Array befuellen (1)
+        bundesliga[1] = 100;
+        bundesliga[4] = "Dortmund";
+
+        // Array ausgeben (1)
+        document.write(bundesliga[1]);
+        document.write(bundesliga[4]);
+
+
+        document.write("<br><br>");
+
+        // Array erzeugen (2)
+        var stadt = new Array(4); // Array mit 4 Elementen
+
+        // Array befuellen (2)
+        stadt[0] = "Berlin";
+        stadt[1] = "Muenchen";
+        stadt[2] = "Nuernberg";
+        stadt[3] = "Hamburg";
+        stadt[4] = "Person"
+
+        // Array ausgeben (2)
+        document.write(stadt[0]);
+        document.write(stadt[1]);
+        document.write(stadt[2]);
+        document.write(stadt[3]);
+        document.write(stadt[4]);
+
+        document.write("<br><br>");
+
+        // Array erzeugen & befuellen (3)
+        var Laender = ["Deutschland", "Polen", "Italien", "Frankreich"];
+
+        // Array ausgeben (3)
+        document.write(Laender[0]);
+        document.write(Laender[1]);
+        document.write(Laender[2]);
+        document.write(Laender[3]);
+
+        document.write("<br><br>");
+
+        // Assoziatives Array (4)
+        var Stadt = new Array();
+
+        // Felder befuellen (4)
+        Stadt["Wohnort"] = "Burghausen";
+        Stadt["Name"] = "Max Mustermann";
+
+        // Ausgabe (4)
+        document.write(Stadt["Wohnort"]);
+        document.write(Stadt["Name"]);
+
+        // ODER
+        var Wohnort = Stadt["Wohnort"];
+        var Name = Stadt["Name"];
+
+        document.write(Wohnort);
+        document.write(Name);
+
+        document.write("<br><br>");
+
+
+        // Array methoden:
+        // concat
+
+        const Girls = ["Laura", "Lili"];
+        const Boys = ["Peter", "Hans", "Stefan"];
+
+        const Couples = Girls.concat(Boys);
+        document.write(Couples);
+
+
+        document.write("<br><br>");
+
+
+        // join()
+        const fruits = ["Apple", "Orange", "Kiwi", "Mango"]
+        let join = fruits.join(" ; ");
+        document.write(join);
+
+
+
+    //     // Assoziatives Array
+    //    const test = [
+    //         {name: "Max", age: 20, courses: ["Mathematik", "Informatik"]}
+    //    ];
+
+
+    </script>
+</body>
+</html>

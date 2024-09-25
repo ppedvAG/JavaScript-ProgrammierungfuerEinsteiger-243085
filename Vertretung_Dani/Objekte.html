@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objekte</title>
+</head>
+<body>
+    <script>
+
+        // Konstruktor
+        function Auto(Marke, Modell) {
+            this.Marke = Marke;
+            this.Modell = Modell;
+        }
+
+        // Initialisieren des Objektes mit "new"
+        var Golf = new Auto("VW", "Golf VII");
+
+        // Ausgeben des Objektes
+        document.write("Marke: " + Golf.Marke + "<br>");
+        document.write("Modell: " + Golf.Modell + "<br>");
+
+
+        // Anonyme Objekte
+        var ObjVar = {
+            "Marke" : "BMW",
+            "Modell" : "M4"
+        }
+
+        let Test = new Array();
+
+        document.write(ObjVar.Marke + "<br>");
+        document.write(ObjVar.Modell + "<br>");
+
+        // Ist das ganze ein Objekt?
+        document.write("<br>" + typeof(Test) + "<br>");
+
+        document.write(Golf instanceof Auto);
+
+        // Dynamisch Eigenschaften Hinzufügen
+        function Trainer(name) {
+            this.name = name;
+        }
+
+        var Kd = new Trainer("Klopp");
+
+        document.write(Kd.name);
+
+        Kd.Vorname = "Jürgen";
+        document.write(Kd.Vorname);
+
+        // Löschen von Jürge
+        delete Kd.Vorname;
+        document.write(Kd.Vorname);
+
+        // KOnstruktor
+        function Spieler(name, vorname) {
+            this.name = name;
+            this.vorname = vorname;
+        }
+
+        document.write("<br><br>");
+
+        var Sp = new Spieler("Florian", "Wirtz");
+
+        with(Sp) {
+            document.write(name + "<br>");
+            document.write(vorname + "<br>");
+        }
+
+
+        var Alaba = new Spieler("David", "Alaba");
+
+        with(Alaba) {
+            document.write(name + vorname);
+        }
+
+
+
+        // For in / of()
+        let students = [
+            { name: "Max", age: 20, courses: ["Mathematik", "Informatik"] },
+            { name: "Lisa", age: 21, courses: ["Physik", "Chemie"] },
+            { name: "Anna", age: 19, courses: ["Englisch", "Geschichte"] }
+        ];
+
+        // Funktion zum Anzeigen aller Studenteninformationen
+        function showStudents() {
+            console.log("Alle Studenten:");
+
+            for (let student of students) {
+                console.log(`Name: ${student.name}, Alter: ${student.age}, Kurse: ${student.courses.join(", ")}`);
+            }
+            console.log("--------------------");
+        }
+
+        showStudents();
+
+
+    </script>
+</body>
+</html>

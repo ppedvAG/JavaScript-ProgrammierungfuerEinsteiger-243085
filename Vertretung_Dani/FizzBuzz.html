@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FizzBuzz</title>
+</head>
+<body>
+    
+    <script>
+
+        // Übung: FizzBuzz mit Arrays
+
+        // "Fizz" ausgibt, wenn die Zahl durch 3 teilbar ist,
+        // "Buzz" ausgibt, wenn die Zahl durch 5 teilbar ist,
+        // "FizzBuzz" ausgibt, wenn die Zahl sowohl durch 3 als auch durch 5 teilbar ist,
+        // die Zahl selbst ausgibt, wenn keine der obigen Bedingungen erfüllt ist.
+
+
+        // 1. Erstelle ein Array mit den Zahlen von 1 bis 20
+        let Zahlen = [];
+        for(let i = 1; i <=20; i++) {
+            Zahlen.push(i);
+        }
+
+        document.write(Zahlen);
+
+        // 2. Verwende eine Schleife, um durch das Array zu iterieren
+        for(let i = 0; i < Zahlen.length; i++) {
+             // 3. If Abfragen um zu überprüfen, ob eine Zahl durch 3 oder 5 teilbar ist
+            
+            if(Zahlen[i] % 3 == 0 && Zahlen[i] % 5 == 0) {
+                console.log("FizzBuzz");
+            } else if(Zahlen[i] % 3 == 0) {
+                console.log("Fizz");
+            } else if (Zahlen[i] % 5 == 0) {
+                console.log("Buzz");
+            } else {
+                console.log(Zahlen[i]);
+            }
+        }
+
+        document.write("<br><br>")
+
+        for(let i = 0; i < Zahlen.length; i++) { 
+
+            switch(true) {
+                case (Zahlen[i] % 3 == 0 && Zahlen[i] % 5 == 0): 
+                    document.write("FizzBuzz");
+                    break;
+                case (Zahlen[i] % 3 == 0):
+                    document.write("Fizz");
+                    break;
+                case (Zahlen[i] % 5 == 0):
+                    document.write("Buzz");
+                    break;
+                default:
+                    document.write(Zahlen[i]);
+                    break;
+            }
+
+        }
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datum</title>
+</head>
+<body>
+    <p id="year"></p>
+
+    <script>
+
+        // Date
+        const d = new Date();
+        document.write(d + "<br>");
+
+        d.setFullYear(2020);
+        document.getElementById("year").innerHTML = d;
+
+    </script>
+</body>
+</html>
