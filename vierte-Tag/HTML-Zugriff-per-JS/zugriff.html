@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamische Tabellen</title>
+    <link rel="stylesheet" href="/vierte-Tag/HTML-Zugriff-per-JS/zugriff.css">
+    <script src="/vierte-Tag/HTML-Zugriff-per-JS/zugriff.js" defer></script>
+</head>
+
+<body>
+    <form id="table-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="alter">Alter:</label>
+        <input type="number" id="alter" required>
+
+        <button type="submit">Werte hinzufügen</button>
+    </form>
+
+    <table id="daten-tabelle">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Alter</th>
+                <th>Aktionen</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Die Datenzeilen werden hier hinzugefügt -->
+        </tbody>
+    </table>
+
+
+</body>
+
+</html>
