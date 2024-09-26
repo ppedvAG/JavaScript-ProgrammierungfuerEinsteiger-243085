@@ -1,0 +1,39 @@
+td,
+th {
+    color: green;
+}
+
+
+
+* {
+    color: grey;
+}
+
+p {
+    color: black;
+}
+
+h2 {
+    color: pink;
+}
+
+.chapter-heading {
+    color: black;
+    font-size: 36px;
+}
+
+p+h2 {
+    text-decoration: underline;
+}
+
+h1~h2 {
+    text-decoration: overline;
+}
+
+ul li {
+    color: blue;
+}
+
+ul>li {
+    color: brown;
+}
